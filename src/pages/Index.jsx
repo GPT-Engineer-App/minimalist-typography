@@ -6,7 +6,7 @@ import { Global } from "@emotion/react";
 const Index = () => {
   const [hovered, setHovered] = useState(null);
 
-  const menuItems = ["ABOUT ME", "TIPOGRAFÍA", "SÍNTESIS VISUAL", "DIBUJO", "[Z]³"];
+  const menuItems = ["ABOUT ME", "TIPOGRAFÍA", "SÍNTESIS VISUAL", "DIBUJO", "PORTAFOLIO JVV"];
 
   return (
     <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center" bg="white">
@@ -41,22 +41,9 @@ const Index = () => {
         </HStack>
       </Box>
       <VStack spacing={4}>
-        <HStack spacing={0} alignItems="center">
-          <Text fontSize="4xl" fontFamily="Bebas Neue">
-            [
-          </Text>
-          <HStack spacing={1}>
-            <Box bg="black" borderRadius="50%" boxSize="20px" />
-            <Box bg="black" height="2px" width="30px" />
-            <Box bg="black" borderRadius="50%" boxSize="20px" />
-          </HStack>
-          <Text fontSize="4xl" fontFamily="Bebas Neue">
-            ]
-          </Text>
-          <Box as="sup" fontSize="2xl" fontFamily="Bebas Neue">
-            ³
-          </Box>
-        </HStack>
+        <Text fontSize="4xl" fontFamily="Bebas Neue">
+          Portafolio JVV
+        </Text>
       </VStack>
     </Container>
   );
