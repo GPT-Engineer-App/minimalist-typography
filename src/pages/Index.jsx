@@ -14,7 +14,18 @@ const Index = () => {
       <Box as="nav" width="100%" mb={8}>
         <HStack justifyContent="center" spacing={8}>
           {menuItems.map((item, index) => (
-            <Link key={index} fontSize="2xl" fontFamily="Bebas Neue" color={hovered === index ? "#E4007C" : "black"} onMouseEnter={() => setHovered(index)} onMouseLeave={() => setHovered(null)} href="#">
+            <Link
+              key={index}
+              fontSize="2xl"
+              fontFamily="Bebas Neue"
+              color={hovered === index ? "#E4007C" : "black"}
+              onMouseEnter={() => setHovered(index)}
+              onMouseLeave={() => setHovered(null)}
+              href={`/${item
+                .toLowerCase()
+                .replace(/ /g, "-")
+                .replace(/[^a-z0-9-]/g, "")}`}
+            >
               {item === "[Z]³" ? (
                 <HStack spacing={0}>
                   <Text>[Z]</Text>
