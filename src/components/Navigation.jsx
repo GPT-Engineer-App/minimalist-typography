@@ -3,7 +3,7 @@ import { Box, Flex, Text, HStack } from "@chakra-ui/react";
 import { useState } from "react";
 
 const Navigation = () => {
-  const [active, setActive] = useState("ABOUT ME");
+  const [active, setActive] = useState("");
 
   const handleClick = (item) => {
     setActive(item);
@@ -23,7 +23,7 @@ const Navigation = () => {
           </Text>
         </Link>
         <Link to="/about-me" onClick={() => handleClick("ABOUT ME")}>
-          <Text fontFamily="Bebas Neue" color={active === "ABOUT ME" ? "#E4007C" : "black"} _hover={{ color: "#E4007C" }}>
+          <Text fontFamily="Bebas Neue" color="black" _hover={{ color: "#E4007C" }}>
             ABOUT ME
           </Text>
         </Link>
