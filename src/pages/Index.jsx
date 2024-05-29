@@ -30,11 +30,15 @@ const Index = () => {
         </HStack>
       </Box>
       <VStack spacing={4}>
-        <HStack spacing={0}>
+        <HStack spacing={0} alignItems="center">
           <Text fontSize="4xl" fontFamily="Bebas Neue">
             [
           </Text>
-          <Image src="https://images.unsplash.com/photo-1633158832433-11a30ad1e10d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxyb3VuZCUyMGV5ZWdsYXNzZXN8ZW58MHx8fHwxNzE3MDE4NTM4fDA&ixlib=rb-4.0.3&q=80&w=1080" alt="Round Eyeglasses" boxSize="100px" />
+          <HStack spacing={1}>
+            <Box bg="black" borderRadius="50%" boxSize="20px" />
+            <Box bg="black" height="2px" width="30px" />
+            <Box bg="black" borderRadius="50%" boxSize="20px" />
+          </HStack>
           <Text fontSize="4xl" fontFamily="Bebas Neue">
             ]
           </Text>
