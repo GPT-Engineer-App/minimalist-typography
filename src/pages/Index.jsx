@@ -41,9 +41,21 @@ const Index = () => {
         </HStack>
       </Box>
       <VStack spacing={4}>
-        <Text fontSize="4xl" fontFamily="Bebas Neue">
-          Portafolio JVV
-        </Text>
+        <HStack spacing={0}>
+          <Text fontSize="4xl" fontFamily="Bebas Neue">
+            [
+          </Text>
+          <Box as="span" display="flex" alignItems="center">
+            <Box as="span" width="20px" height="20px" borderRadius="50%" backgroundColor="black" display="inline-block" marginX="2px" />
+            <Box as="span" width="20px" height="20px" borderRadius="50%" backgroundColor="black" display="inline-block" marginX="2px" />
+          </Box>
+          <Text fontSize="4xl" fontFamily="Bebas Neue">
+            ]
+            <Box as="sup" fontSize="lg">
+              ³
+            </Box>
+          </Text>
+        </HStack>
       </VStack>
     </Container>
   );
