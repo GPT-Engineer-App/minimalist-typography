@@ -5,10 +5,12 @@ import Tipografia from "./pages/Tipografia.jsx";
 import SintesisVisual from "./pages/SintesisVisual.jsx";
 import Dibujo from "./pages/Dibujo.jsx";
 import ZCubed from "./pages/ZCubed.jsx";
+import Navigation from "./components/Navigation.jsx";
 
 function App() {
   return (
     <Router>
+      <Navigation />
       <Routes>
         <Route exact path="/" element={<Index />} />
         <Route path="/about-me" element={<AboutMe />} />
