@@ -6,7 +6,7 @@ import { Global } from "@emotion/react";
 const Index = () => {
   const [hovered, setHovered] = useState(null);
 
-  const menuItems = ["ABOUT ME", "TIPOGRAFÍA", "SÍNTESIS VISUAL", "DIBUJO", "PORTAFOLIO JVV"];
+  const menuItems = ["ABOUT ME", "TIPOGRAFÍA", "SÍNTESIS VISUAL", "DIBUJO", "[Z]³"];
 
   return (
     <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center" bg="white">
