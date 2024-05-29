@@ -6,7 +6,7 @@ const AboutMe = () => {
   return (
     <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center" bg="white">
       <Global styles={`@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Helvetica&display=swap');`} />
-      <Navigation currentPage="about-me" />
+      <Navigation />
       <HStack spacing={4} alignItems="center">
         <Text fontSize="4xl" fontFamily="Bebas Neue">
           [

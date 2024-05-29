@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Text, HStack } from "@chakra-ui/react";
 import { useState } from "react";
 
 const Navigation = () => {
@@ -12,6 +12,16 @@ const Navigation = () => {
   return (
     <Box bg="white" p={4}>
       <Flex justify="space-between" align="center">
+        <Link to="/" onClick={() => handleClick("HOME")}>
+          <Text fontFamily="Bebas Neue" color={active === "HOME" ? "#E4007C" : "black"} _hover={{ color: "#E4007C" }}>
+            <HStack spacing={0}>
+              <Text>[Z]</Text>
+              <Box as="sup" fontSize="lg">
+                ³
+              </Box>
+            </HStack>
+          </Text>
+        </Link>
         <Link to="/about-me" onClick={() => handleClick("ABOUT ME")}>
           <Text fontFamily="Bebas Neue" color={active === "ABOUT ME" ? "#E4007C" : "black"} _hover={{ color: "#E4007C" }}>
             ABOUT ME
